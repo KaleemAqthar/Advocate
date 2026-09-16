@@ -4,17 +4,16 @@ import TeamCard from "../components/TeamCard";
 
 import { team } from "../data/team";
 
-
 function About() {
   return (
     <>
-
-      {/* PAGE HEADER */}
+      {/* =====================================================
+          PAGE HEADER
+      ===================================================== */}
 
       <section className="page-hero">
 
         <div>
-
           <h1>
             About Our Practice
           </h1>
@@ -22,13 +21,14 @@ function About() {
           <p>
             Home / About
           </p>
-
         </div>
 
       </section>
 
 
-      {/* ABOUT */}
+      {/* =====================================================
+          ABOUT
+      ===================================================== */}
 
       <section className="section section-dark">
 
@@ -36,17 +36,19 @@ function About() {
 
           <div className="about-grid">
 
+            {/* IMAGES */}
+
             <div className="about-images">
 
               <img
                 src="/images/about/courtroom.jpg"
-                alt="Courtroom"
+                alt="Professional courtroom"
                 className="about-main-image"
               />
 
               <img
                 src="/images/about/advocate.jpg"
-                alt="Advocate"
+                alt="Professional advocate"
                 className="about-secondary-image"
               />
 
@@ -64,6 +66,8 @@ function About() {
 
             </div>
 
+
+            {/* CONTENT */}
 
             <div className="about-content">
 
@@ -90,6 +94,8 @@ function About() {
                 with clients.
               </p>
 
+
+              {/* CHECK LIST */}
 
               <ul className="check-list">
 
@@ -129,7 +135,9 @@ function About() {
       </section>
 
 
-      {/* APPROACH */}
+      {/* =====================================================
+          OUR APPROACH
+      ===================================================== */}
 
       <section className="section services-section">
 
@@ -146,7 +154,21 @@ function About() {
           <div className="services-grid">
 
 
+            {/* =================================================
+                UNDERSTAND
+            ================================================= */}
+
             <div className="service-card">
+
+              <div className="service-card-image">
+
+                <img
+                  src="/images/about/understand.jpg"
+                  alt="Advocate discussing a legal matter with a client"
+                />
+
+              </div>
+
 
               <div className="service-content">
 
@@ -168,7 +190,21 @@ function About() {
             </div>
 
 
+            {/* =================================================
+                ANALYSE
+            ================================================= */}
+
             <div className="service-card">
+
+              <div className="service-card-image">
+
+                <img
+                  src="/images/about/analyse.jpg"
+                  alt="Lawyer reviewing legal documents"
+                />
+
+              </div>
+
 
               <div className="service-content">
 
@@ -190,7 +226,21 @@ function About() {
             </div>
 
 
+            {/* =================================================
+                ADVISE
+            ================================================= */}
+
             <div className="service-card">
+
+              <div className="service-card-image">
+
+                <img
+                  src="/images/about/advise.jpg"
+                  alt="Advocate providing legal advice to a client"
+                />
+
+              </div>
+
 
               <div className="service-content">
 
@@ -212,7 +262,21 @@ function About() {
             </div>
 
 
+            {/* =================================================
+                REPRESENT
+            ================================================= */}
+
             <div className="service-card">
+
+              <div className="service-card-image">
+
+                <img
+                  src="/images/about/represent.jpg"
+                  alt="Advocate representing a client in court"
+                />
+
+              </div>
+
 
               <div className="service-content">
 
@@ -241,7 +305,9 @@ function About() {
       </section>
 
 
-      {/* TEAM */}
+      {/* =====================================================
+          TEAM
+      ===================================================== */}
 
       <section className="section section-dark">
 
@@ -252,6 +318,7 @@ function About() {
             label="Our Team"
             title="Legal Professionals"
           />
+
 
           <div className="team-grid">
 
