@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --black: #0b0b0c;
+  --black-soft: #111214;
+  --dark: #17181b;
+  --dark-card: #1d1e21;
+
+  --gold: #c99a4a;
+  --gold-light: #e2bd76;
+  --gold-dark: #9e702d;
+
+  --white: #ffffff;
+  --text: #ededed;
+  --muted: #a5a5a5;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --cream: #f3eee5;
+
+  --container: 1180px;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--black);
+  color: var(--white);
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  border: 0;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: min(var(--container), 92%);
+  margin-inline: auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 100px 0;
+}
+
+.section-dark {
+  background: var(--black-soft);
+}
+
+.section-light {
+  background: var(--cream);
+  color: var(--black);
+}
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* =========================
+   MOBILE TAP
+========================= */
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  .container {
+    width: min(100% - 32px, var(--container));
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
